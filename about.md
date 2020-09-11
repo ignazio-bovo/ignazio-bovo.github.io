@@ -2,6 +2,8 @@
 layout: page
 title: About me 
 ---
+Interested in applying statistical techniques to (mostly) cryptocurrency 
+markets
 
 #### Contacts
 * [twitter](https://twitter.com/mr_bovo)
