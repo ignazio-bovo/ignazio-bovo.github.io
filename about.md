@@ -3,4 +3,7 @@ layout: page
 title: About me 
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+#### Contacts
+* [twitter](https://twitter.com/mr_bovo)
+* [github](https://github.com/ignazio-bovo)
+* [linkedIn](https://www.linkedin.com/in/ignazio-bovo-378113177/)
