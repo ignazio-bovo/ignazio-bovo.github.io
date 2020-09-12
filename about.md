@@ -2,6 +2,10 @@
 layout: page
 title: About me 
 ---
+> "It’s hard to do a really good job on anything you don’t think
+about in the shower"
+*Paul Graham*
+
 Interested in applying statistical techniques to (mostly) cryptocurrency 
 markets
 
