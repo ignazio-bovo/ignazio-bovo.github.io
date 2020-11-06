@@ -1,5 +1,5 @@
-name: cryptometrics
-description: Quantitative cryptocurrencies market analysis
+name: > Name goes here < 
+description: Quantitative market analysis and forecasting
 meta_description: "Quantitative market analysis (mostly cryptos)"
 plugins: [jekyll-paginate]
 
