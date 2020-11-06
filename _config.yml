@@ -1,4 +1,4 @@
-name: > Name goes here < 
+name: [Name Goes Here]
 description: Quantitative market analysis and forecasting
 meta_description: "I don't have enough fantasy for a second description"
 plugins: [jekyll-paginate]
