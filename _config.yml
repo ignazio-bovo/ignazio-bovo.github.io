@@ -1,6 +1,6 @@
 name: > Name goes here < 
 description: Quantitative market analysis and forecasting
-meta_description: "Quantitative market analysis (mostly cryptos)"
+meta_description: "I don't have enough fantasy for a second description"
 plugins: [jekyll-paginate]
 
 markdown: kramdown
