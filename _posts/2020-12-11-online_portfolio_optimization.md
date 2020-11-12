@@ -1,7 +1,7 @@
-markdown: kramdown
-kramdown:
-   math_engine: mathjax
-
+---
+layout: post
+author: Ignazio Bovo
+---
 ```python
 import numpy as np 
 import matplotlib.pyplot as plt
