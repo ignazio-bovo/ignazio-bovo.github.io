@@ -212,9 +212,9 @@ $$
 \end{align*}
 $$
 
-With $\nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle }$ as gradient loss function.
+With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as gradient loss function.
 We use also a regularization term $\Phi$ (so that our new update $\boldsymbol{b}_{t+1}$ is not too far away 
-from $\boldsymbol{b}_t$)
+from $$ \boldsymbol{b}_t $$)
 
 \begin{align*}
 \boldsymbol{b}_{t+1} &= \mathop{\text{argmin}}_{\boldsymbol b \in \Delta_m} \, \left\{ \, \eta_t \langle \nabla \ell_t, \boldsymbol{b} \rangle + \Phi(\boldsymbol b ) \, \right\}
@@ -233,7 +233,7 @@ b_{t,i} = \frac{b_{t-1,i}e^{-\eta_t \nabla \ell_{t,i}}}{
 \qquad t = 1\ldots T
 $$
 
-Having fixed $b_{0,i} = \frac{1}{m}$ for every asset $i$.\\
+Having fixed $$ b_{0,i} = \frac{1}{m} $$ for every asset $$ i $$.\\
 Define the unnormalized portfolio weights as 
 
 $$
@@ -242,9 +242,9 @@ $$
  e^{-\eta_{t} \nabla \ell_{t,i} } 
 $$
 
-With $\beta_{0,i} = 1$.
-Notice that summing from $i =1$ to $m$ in the previous
-equation and dividing by $\sum_{i=1}^m \beta_{t-1,i}$ one
+With $$ \beta_{0,i} = 1 $$.
+Notice that summing from $$ i =1 $$ to $$ m $$ in the previous
+equation and dividing by $$ \sum_{i=1}^m \beta_{t-1,i} $$ one
 obtains
 
 $$
@@ -257,9 +257,9 @@ e^{-\eta_t \nabla \ell_{t}}
 $$
 
 Where the last term denotes the expectation taken with
-respect the probability defined by vector $\boldsymbol b_{t-1}$.  
-Suppose now that $\nabla \ell_{t}$ is such that $\max_{i=1\ldots m} |\nabla \ell_{t,i} | \leq M/2$ for 
-any $t = 1 \ldots T$, then by Hoeffding bound we have 
+respect the probability defined by vector $$ \boldsymbol b_{t-1} $$.  
+Suppose now that $$ \nabla \ell_{t} $$ is such that $$ \max_{i=1\ldots m} |\nabla \ell_{t,i} | \leq M/2 $$ for 
+any $$ t = 1 \ldots T $$, then by Hoeffding bound we have 
 
 $$
 \log
@@ -269,7 +269,7 @@ e^{-\eta_t \nabla \ell_{t}}
 $$
 
 Now we bound LHS and RHS separately:
-By summing from $t=1$ up to $T$ on LHS we get
+By summing from $$ t=1 $$ up to $$ T $$ on LHS we get
 
 $$
 \begin{align*}
