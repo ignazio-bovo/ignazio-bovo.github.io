@@ -222,7 +222,7 @@ $$
 \end{align*}
 $$
 
-If we choose $\Phi$ to be the (negative) Kullback-Leibler divergence of $\boldsymbol b$ from $\boldsymbol{b}_t$
+If we choose $$ \Phi $$ to be the (negative) Kullback-Leibler divergence of $$ \boldsymbol b $$ from $$ \boldsymbol{b}_t $$
 $$
 \Phi(\boldsymbol b) = \text{KL}(\boldsymbol b \| \boldsymbol b_{t})=  \sum_{i=1}^m b_i \log \frac{b_i}{b_{t,i}}
 $$
