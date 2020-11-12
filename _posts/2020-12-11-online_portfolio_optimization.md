@@ -199,7 +199,7 @@ for s in port:
 
 
 # Exponentiated Gradient
-First it is customary in this case to linearize the loss function about $\boldsymbol{b}_t$:
+First it is customary in this case to linearize the loss function about $$ \boldsymbol{b}_t $$:
 
 $$
 \begin{align*}
