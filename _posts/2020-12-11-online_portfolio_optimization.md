@@ -61,7 +61,7 @@ R_T &=  \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} \log(S_T(\{\boldsymbol
 \end{align*}
 $$
 
-The quantity $$ \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\}) = S_T(\boldsymbol{B}^*)$ $ 
+The quantity $$ \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\}) = S_T(\boldsymbol{B}^*) $$ 
 is the wealth associated to the best constant rebalanced portfolio (BCRP) $$ \boldsymbol{B}^*$ and $\ell_t(\boldsymbol b) $$ is our loss function.
 
 ```python
