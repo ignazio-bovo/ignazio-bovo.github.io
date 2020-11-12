@@ -19,16 +19,16 @@ from requests import get
 # Setup
 Consider $$ m $$ assets (in our case $$ m=6 $$ cryptocurrency/USD exchange prices), and 
 denote by a $$ m $$-dimensional
-real valued stochastic process $\boldsymbol{p}_t$ their prices for the trading periods $$ t = 1,\ldots,T  $$.  
+real valued stochastic process $$ \boldsymbol{p}_t $$ their prices for the trading periods $$ t = 1,\ldots,T  $$.  
 For each asset $$ i $$ define
 
 $$
 x_{i,t} = \frac{p_{i,t}}{p_{i,t-1}} \quad i = 1\ldots m, \,\, t = 2,\ldots T
 $$
 
-That is today's close divided by yestarday's close, call this price relative vector $\boldsymbol{x}_t$, the vectors
+That is today's close divided by yestarday's close, call this price relative vector $$ \boldsymbol{x}_t $$, the vectors
 $$ \{\boldsymbol{x}_1,\ldots, \boldsymbol{x}_T\} $$ are usually called market vector.  
-An investment strategy $\boldsymbol{B}$ is a sequence of vector valued functions 
+An investment strategy $$ \boldsymbol{B} $$ is a sequence of vector valued functions 
 
 $$\boldsymbol{b}_t: \mathbb{R}_+^{t-1} \rightarrow \Delta_m, \qquad \Delta_m = \{ \boldsymbol{b} \text{ s.t. } b_i \geq 0, \sum_{i=1}^m b_i = 1 \}
 $$
@@ -308,7 +308,7 @@ $$
 \end{align*}
 $$
 
-So finally, if we fix $\eta_t = \eta \geq 0$ constant, we obtain the regret bound 
+So finally, if we fix $$ \eta_t = \eta \geq 0 $$ constant, we obtain the regret bound 
 
 $$
 \sum_{t=1}^T \langle \nabla \ell_t , \boldsymbol b_t \rangle
