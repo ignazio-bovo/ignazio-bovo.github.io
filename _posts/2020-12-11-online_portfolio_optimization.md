@@ -17,7 +17,7 @@ from requests import get
 ```
 
 # Setup
-Consider $$ m $$ assets (in our case $m=6$ cryptocurrency/USD exchange prices), and 
+Consider $$ m $$ assets (in our case $$ m=6 $$ cryptocurrency/USD exchange prices), and 
 denote by a $$ m $$-dimensional
 real valued stochastic process $\boldsymbol{p}_t$ their prices for the trading periods $$ t = 1,\ldots,T  $$.  
 For each asset $$ i $$ define
@@ -216,9 +216,11 @@ With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x
 We use also a regularization term $\Phi$ (so that our new update $\boldsymbol{b}_{t+1}$ is not too far away 
 from $$ \boldsymbol{b}_t $$)
 
+$$
 \begin{align*}
 \boldsymbol{b}_{t+1} &= \mathop{\text{argmin}}_{\boldsymbol b \in \Delta_m} \, \left\{ \, \eta_t \langle \nabla \ell_t, \boldsymbol{b} \rangle + \Phi(\boldsymbol b ) \, \right\}
 \end{align*}
+$$
 
 If we choose $\Phi$ to be the (negative) Kullback-Leibler divergence of $\boldsymbol b$ from $\boldsymbol{b}_t$
 $$
@@ -316,7 +318,7 @@ $$
 = M \sqrt{ T \frac{\log m}{8}}
 $$
 
-for $\eta = \frac{1}{M} \sqrt{\frac{8}{T}\log m}$
+for $$ \eta = \frac{1}{M} \sqrt{\frac{8}{T}\log m} $$
 
 
 ```python
