@@ -214,7 +214,7 @@ $$
 $$
 
 With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as gradient loss function.
-We use also a regularization term $\Phi$ (so that our new update $\boldsymbol{b}_{t+1}$ is not too far away 
+We use also a regularization term $ \Phi $ (so that our new update $\boldsymbol{b}_{t+1}$ is not too far away 
 from $$ \boldsymbol{b}_t $$)
 
 $$
