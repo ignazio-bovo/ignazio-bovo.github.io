@@ -30,7 +30,8 @@ That is today's close divided by yestarday's close, call this price relative vec
 $$ \{\boldsymbol{x}_1,\ldots, \boldsymbol{x}_T\} $$ are usually called market vector.  
 An investment strategy $$ \boldsymbol{B} $$ is a sequence of vector valued functions 
 
-$$\boldsymbol{b}_t: \mathbb{R}_+^{t-1} \rightarrow \Delta_m, \qquad \Delta_m = \{ \boldsymbol{b} \text{ s.t. } b_i \geq 0, \sum_{i=1}^m b_i = 1 \}
+$$
+\boldsymbol{b}_t: \mathbb{R}_+^{t-1} \rightarrow \Delta_m, \qquad \Delta_m = \{ \boldsymbol{b} \text{ s.t. } b_i \geq 0, \sum_{i=1}^m b_i = 1 \}
 $$
 
 so that $$ b_{i,t} = b_{i,t}(\boldsymbol{x}_1,\ldots,\boldsymbol{x}_{t-1}) $$ is the wealth invested in the $$ i $$-th asset, given
