@@ -27,22 +27,28 @@ x_{i,t} = \frac{p_{i,t}}{p_{i,t-1}} \quad i = 1\ldots m, \,\, t = 2,\ldots T
 $$
 
 That is today's close divided by yestarday's close, call this price relative vector $\boldsymbol{x}_t$, the vectors
-$\{\boldsymbol{x}_1,\ldots, \boldsymbol{x}_T\}$ are usually called market vector.  
+$$ \{\boldsymbol{x}_1,\ldots, \boldsymbol{x}_T\} $$ are usually called market vector.  
 An investment strategy $\boldsymbol{B}$ is a sequence of vector valued functions 
+
 $$\boldsymbol{b}_t: \mathbb{R}_+^{t-1} \rightarrow \Delta_m, \qquad \Delta_m = \{ \boldsymbol{b} \text{ s.t. } b_i \geq 0, \sum_{i=1}^m b_i = 1 \}
 $$
-so that $b_{i,t} = b_{i,t}(\boldsymbol{x}_1,\ldots,\boldsymbol{x}_{t-1})$ is the wealth invested in the $i$-th asset, given
-past market vectors $\boldsymbol{x}_1,\ldots, \boldsymbol{x}_{t-1}$.  
-The Wealth at the time horizon $T$ associated to strategy $\boldsymbol{B}$ is :
+
+so that $$ b_{i,t} = b_{i,t}(\boldsymbol{x}_1,\ldots,\boldsymbol{x}_{t-1}) $$ is the wealth invested in the $$ i $$-th asset, given
+past market vectors $$ \boldsymbol{x}_1,\ldots, \boldsymbol{x}_{t-1} $$.  
+The Wealth at the time horizon $$ T $$ associated to strategy $$ \boldsymbol{B} $$ is :
+
 $$ 
 S_T (\boldsymbol{B}) = S_0 \prod_{t = 1}^T \langle \boldsymbol{x}_t, \boldsymbol{b}_t \rangle
 $$
 
-We aim to measure the log-performance of the strategy: suppose $S_0 = 1$ and
+We aim to measure the log-performance of the strategy: suppose $$ S_0 = 1 $$ and
+
 $$
 \log S_T (\boldsymbol{B}) = \sum_{t = 1}^T \log(\langle \boldsymbol{x}_t, \boldsymbol{b}_t \rangle )
 $$
-We define the regret wrt time horizon $T$ as 
+
+We define the regret wrt time horizon $$ T $$ as 
+
 $$
 \begin{align*}
 R_T &=  \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} \log(S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\})) -
@@ -54,9 +60,8 @@ R_T &=  \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} \log(S_T(\{\boldsymbol
 \end{align*}
 $$
 
-The quantity $\mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\}) = S_T(\boldsymbol{B}^*)$ 
-is the wealth associated to the best constant rebalanced portfolio (BCRP) $\boldsymbol{B}^*$ and $\ell_t(\boldsymbol b)$ is our loss function.
-
+The quantity $$ \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\}) = S_T(\boldsymbol{B}^*)$ $ 
+is the wealth associated to the best constant rebalanced portfolio (BCRP) $$ \boldsymbol{B}^*$ and $\ell_t(\boldsymbol b) $$ is our loss function.
 
 ```python
 size = 500
