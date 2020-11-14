@@ -190,9 +190,13 @@ for s in port:
     sns.lineplot(y=s,x=df.index, data=df_norm,label=s)
 ```
 
+Visualizing the normalized price process of the assets in our 
+portfolio
     
 ![Normalized asset evolution](../../../assets/images/ops_1_normalized.png)
     
+
+Compute now market vectors and plot them:
 
 ```python
 x = 1/(1-df.pct_change())
@@ -357,6 +361,9 @@ ndf = df
 ndf['pprice'] = pprice
 ```
 
+Plotting the normalized value (`pprice`) of our portfolio against normalized
+values of other assets:
+
 
 ```python
 # fig = px.line(ndf/ndf.iloc[0,:],template='plotly_white')
@@ -367,13 +374,6 @@ plt.title('Normalized plot $S_t,i/S_{0,i}')
 
 
 
-
-    <AxesSubplot:xlabel='time'>
-
-
-
-
-    
 ![Performance](../../../assets/images/ops_1_performance.png)
 
 
@@ -395,3 +395,12 @@ for sym in port:
 ```python
 
 ```
+
+### Outro
+It is very easy to see why this framework is so attractive: very few assumptions,
+promising results, interesting machine learning techniques. It remains however
+to construct a full backtest together with informative metrics. It is worth 
+to note that the learning rate chosen depends on the time horizong $$ T $$.
+It is possible to build a strategy by using learning rate that depends on the 
+current round $$ t $$ or even to resort to the doubling trick to get rid of
+the time-horizon dependence, more on that in the next posts.
