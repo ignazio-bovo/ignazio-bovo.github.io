@@ -187,7 +187,7 @@ df.head()
 ```python
 df_norm = df/df.iloc[0,:]
 for s in port:
-    sns.lineplot(y=s,x=df.index, data=df_norm,label=s)
+    sns.lineplot(y=s,x=df.index, data=df_norm)
 ```
 
 Visualizing the normalized price process of the assets in our 
