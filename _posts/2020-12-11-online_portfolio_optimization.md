@@ -72,7 +72,7 @@ R_T &=  \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} \log(S_T(\{\boldsymbol
 $$
 
 The quantity $$ \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\}) = S_T(\boldsymbol{B}^*) $$ 
-is the wealth associated to the best constant rebalanced portfolio (BCRP) $$ \boldsymbol{B}^*$ and $\ell_t(\boldsymbol b) $$ is our loss function.
+is the wealth associated to the best constant rebalanced portfolio (BCRP) $$ \boldsymbol{B}^*$$ and $$ \ell_t(\boldsymbol b) $$ is our loss function.
 
 ```python
 size = 500
@@ -223,8 +223,8 @@ $$
 \end{align*}
 $$
 
-With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as gradient loss function.
-We use also a regularization term $$ \Phi $$ (so that our new update $$ \boldsymbol{b}_{t+1} $$ is not too far away 
+With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as the gradient of our loss function.
+We use also a regularization term $$ \Phi $$ (so that our new portfolio configuration $$ \boldsymbol{b}_{t+1} $$ is not too different 
 from $$ \boldsymbol{b}_t $$ )
 
 $$
