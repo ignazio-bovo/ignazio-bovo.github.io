@@ -204,7 +204,7 @@ for s in port:
 
 
     
-![png](MR_strategy1_files/MR_strategy1_6_0.png)
+![png](../assets/MR_strategy1_files/MR_strategy1_6_0.png)
     
 
 
