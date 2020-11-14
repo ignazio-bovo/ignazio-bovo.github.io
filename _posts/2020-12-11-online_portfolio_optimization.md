@@ -224,8 +224,8 @@ $$
 $$
 
 With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as gradient loss function.
-We use also a regularization term $ \Phi $ (so that our new update $\boldsymbol{b}_{t+1}$ is not too far away 
-from $$ \boldsymbol{b}_t $$)
+We use also a regularization term $$ \Phi $$ (so that our new update $$ \boldsymbol{b}_{t+1} $$ is not too far away 
+from $$ \boldsymbol{b}_t $$ )
 
 $$
 \begin{align*}
@@ -233,7 +233,7 @@ $$
 \end{align*}
 $$
 
-If we choose $$ \Phi $$ to be the (negative) Kullback-Leibler divergence of $$ \boldsymbol b $$ from $$ \boldsymbol{b}_t $$
+If we choose $$ \Phi $$ to be the Kullback-Leibler divergence of $$ \boldsymbol b $$ from $$ \boldsymbol{b}_t $$
 $$
 \Phi(\boldsymbol b) = \text{KL}(\boldsymbol b \| \boldsymbol b_{t})=  \sum_{i=1}^m b_i \log \frac{b_i}{b_{t,i}}
 $$
