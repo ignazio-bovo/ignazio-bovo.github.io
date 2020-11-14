@@ -400,7 +400,7 @@ for sym in port:
 It is very easy to see why this framework is so attractive: very few assumptions,
 promising results, interesting machine learning techniques. It remains however
 to construct a full backtest together with informative metrics. It is worth 
-to note that the learning rate $$ \eta $$ chosen depends on the time horizong $$ T $$.
+to note that the learning rate $$ \eta $$ chosen depends on the time horizon $$ T $$.
 It is possible to build a strategy by using learning rate that depends on the 
 current round $$ t $$ or even to resort to the doubling trick to get rid of
 the time-horizon dependence, more on that in the next posts.
