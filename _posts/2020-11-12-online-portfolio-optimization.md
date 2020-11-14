@@ -1,9 +1,11 @@
 ---
 layout: post
 author: Ignazio Bovo
+title: Online Portfolio optimization
 ---
-# Universal portfolio theory 
-Universal portfolio theory was introduced by T. Cover in a series of papers
+### Intro
+Online portfolio optimization is also known as universal portfolio theory or
+online sequential investments. The theoretic framework was introduced by T. Cover in a series of papers
 starting from 1991. Different from mainstream portfolio theory popularized by 
 Markowitz, it lacks statistical assumptions about the underlying market, 
 allowing for a more general setting, this feature coupled with techniques
@@ -25,7 +27,7 @@ import json
 from requests import get
 ```
 
-# Setup
+### Setup
 Consider $$ m $$ assets (in our case $$ m=6 $$ cryptocurrency/USD exchange prices), and 
 denote by a $$ m $$-dimensional
 real valued stochastic process $$ \boldsymbol{p}_t $$ their prices for the trading periods $$ t = 1,\ldots,T  $$.  
@@ -188,12 +190,9 @@ for s in port:
     sns.lineplot(y=s,x=df.index, data=df_norm,label=s)
 ```
 
-
     
-![png](MR_strategy1_files/MR_strategy1_5_0.png)
+![Normalized asset evolution](../../../assets/images/ops_1_normalized.png)
     
-
-
 
 ```python
 x = 1/(1-df.pct_change())
@@ -204,11 +203,11 @@ for s in port:
 
 
     
-![png](../assets/MR_strategy1_files/MR_strategy1_6_0.png)
+![Market vectors](../../../assets/images/ops_1_market_vectors.png)
     
 
 
-# Exponentiated Gradient
+### Exponentiated Gradient
 First it is customary in this case to linearize the loss function about $$ \boldsymbol{b}_t $$:
 
 $$
@@ -375,8 +374,7 @@ plt.title('Normalized plot $S_t,i/S_{0,i}')
 
 
     
-![png](MR_strategy1_files/MR_strategy1_11_1.png)
-    
+![Performance](../../../assets/images/ops_1_performance.png)
 
 
 
