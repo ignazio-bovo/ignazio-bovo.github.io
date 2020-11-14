@@ -3,7 +3,7 @@ layout: post
 author: Ignazio Bovo
 title: Universal Portfolio Theory
 ---
-## Intro
+### Intro
 Universal portfolio theory was introduced by T. Cover in a series of papers
 starting from 1991. Different from mainstream portfolio theory popularized by 
 Markowitz, it lacks statistical assumptions about the underlying market, 
@@ -26,7 +26,7 @@ import json
 from requests import get
 ```
 
-# Setup
+### Setup
 Consider $$ m $$ assets (in our case $$ m=6 $$ cryptocurrency/USD exchange prices), and 
 denote by a $$ m $$-dimensional
 real valued stochastic process $$ \boldsymbol{p}_t $$ their prices for the trading periods $$ t = 1,\ldots,T  $$.  
@@ -209,7 +209,7 @@ for s in port:
     
 
 
-# Exponentiated Gradient
+### Exponentiated Gradient Strategy
 First it is customary in this case to linearize the loss function about $$ \boldsymbol{b}_t $$:
 
 $$
