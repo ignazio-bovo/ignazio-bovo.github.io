@@ -71,7 +71,7 @@ R_T &=  \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} \log(S_T(\{\boldsymbol
 $$
 
 The quantity $$ \mathop{\text{max}}_{\boldsymbol{b} \in \Delta_m} S_T(\{\boldsymbol{b},\ldots,\boldsymbol{b}\}) = S_T(\boldsymbol{B}^*) $$ 
-is the wealth associated to the best constant rebalanced portfolio (BCRP) $$ \boldsymbol{B}^*$ and $\ell_t(\boldsymbol b) $$ is our loss function.
+is the wealth associated to the best constant rebalanced portfolio (BCRP) $$ \boldsymbol{B}^* $$ and $$ \ell_t(\boldsymbol b) $$ is our loss function.
 
 ```python
 size = 500
@@ -222,8 +222,8 @@ $$
 \end{align*}
 $$
 
-With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as gradient loss function.
-We use also a regularization term $ \Phi $ (so that our new update $\boldsymbol{b}_{t+1}$ is not too far away 
+With $$ \nabla \ell_t = \nabla {\ell_t}(\boldsymbol{b}_t) = -\frac{\boldsymbol x_t }{\langle \boldsymbol b_t , \boldsymbol x_t \rangle } $$ as the gradient of our loss function.
+We use also a regularization term $$ \Phi $$ (so that our new update $$ \boldsymbol{b}_{t+1} $$ is not too far away 
 from $$ \boldsymbol{b}_t $$)
 
 $$
@@ -232,7 +232,8 @@ $$
 \end{align*}
 $$
 
-If we choose $$ \Phi $$ to be the (negative) Kullback-Leibler divergence of $$ \boldsymbol b $$ from $$ \boldsymbol{b}_t $$
+If we choose $$ \Phi $$ to be the Kullback-Leibler divergence of $$ \boldsymbol b $$ from $$ \boldsymbol{b}_t $$
+
 $$
 \Phi(\boldsymbol b) = \text{KL}(\boldsymbol b \| \boldsymbol b_{t})=  \sum_{i=1}^m b_i \log \frac{b_i}{b_{t,i}}
 $$
@@ -295,7 +296,7 @@ e^{-\eta_t \nabla \ell_{t}}
 \right) - \log m, \qquad & \left [\max_{i=1,\ldots,m} \beta_{i}
  \leq \sum_{i=1}^m \beta_{i}, \,\, \beta_{i} \geq 0, \forall i \right]
 \\
-&=  \min_{i=1,\ldots,m} \, \sum_{t=1}^T \eta_{t} \nabla \ell_{t,i} - \log m ,\qquad &\left[-\min_x -f(x) = \max_x f(x) \right]
+&=  \min_{i=1,\ldots,m} \, \sum_{t=1}^T \eta_{t} \nabla \ell_{t,i} - \log m ,\qquad &\left[\text{monotonicity of} \log \right]
 \end{align*}
 $$
 
